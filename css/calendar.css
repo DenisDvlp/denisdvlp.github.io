@@ -1,0 +1,308 @@
+body,
+div.calendar,
+div.calendar div,
+div.adddialog,
+div.adddialog p,
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*add button*/
+
+div.addbtn,
+div.adddialog input[name=add] {
+    color: white;
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px #777;
+}
+
+div.addbtn {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 40px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 900;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    z-index: 2;
+}
+
+div.addbtn:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+/*add dialog*/
+
+div.adddialog {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    display: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+div.zoomout {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+
+div.adddialog form {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: calc(50% - 250px);
+    top: calc(50% - 216px);
+    padding: 15px;
+    background-color: #FF9800;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #777;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    border: 2px solid #912B00;
+}
+
+div.adddialog form.zoomout {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+div.adddialog p,
+div.adddialog input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #723E20;
+}
+
+div.adddialog p {
+    height: 22px;
+}
+
+div.adddialog input {
+    height: 42px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #777;
+}
+
+div.adddialog input:focus {
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    box-shadow: 0 0 10px #222;
+}
+
+div.adddialog input[name=add] {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+div.adddialog input[name=add]:hover {
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    box-shadow: 0 0 10px #222;
+}
+
+
+/*calendar*/
+
+div.calendar {
+    width: 712px;
+    height: 704px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #FF3D00;
+    cursor: default;
+}
+
+div.week {
+    color: white;
+    height: 100px;
+    margin-top: 2px;
+}
+
+div.header,
+div.day {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    margin-right: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.header:last-child,
+div.day:last-child {
+    margin-right: 0;
+}
+
+div.day:hover {
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    border: 2px solid #FF3D00;
+    background-color: #FFC400;
+}
+
+div.today {
+    background-color: #FF7800;
+}
+
+div.thismonth {
+    background-color: #FF9800;
+}
+
+div.notthismonth {
+    background-color: #A1887F;
+}
+
+
+/*month*/
+
+div.month {
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+
+/*header week*/
+
+div.week:nth-child(2) {
+    margin-top: 0;
+    height: 30px;
+}
+
+
+/*header day*/
+
+div.week div.header {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #4CAF50;
+    cursor: default;
+}
+
+
+/*number*/
+
+div.number {
+    font-size: 30px;
+    height: 100%;
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/*number with event*/
+
+div.withevent {
+    padding-top: 7%;
+    padding-left: 7%;
+    font-size: 20px;
+    height: 100%;
+    line-height: 100%;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+/*event*/
+
+div.event {
+    height: 20%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15pt;
+    line-height: 100%;
+    left: -1px;
+    right: -1px;
+    position: absolute;
+    background-color: #00BCD4;
+}
+div.day:first-child div.event {
+    left: 0;
+}
+div.day:last-child div.event {
+    right: 0;
+}
+div.day:hover div.event {
+    left: 0;
+    right: 0;
+}
+
+div.event:hover {
+    z-index: 1;
+    border: 2px solid #007180;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+div.pos1 {
+    top: 29%;
+}
+
+div.pos2 {
+    top: 52%;
+}
+
+div.pos3 {
+    top: 75%;
+}
+
+div.begin {
+    left: 8%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div.end {
+    right: 8%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
