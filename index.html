@@ -1,107 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Introduction to C++ Programming</title>
+  </head>
+  <body>
+    <h1>Introduction to C++ Programming</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src='js/calendar.js'></script>
-</head>
+    <p>C++ is a powerful programming language that has been around for over 30 years. It is widely used in developing software, operating systems, video games, and more. In this article, we will introduce you to the basics of C++ programming.</p>
 
-<body>
-    <div class="calendar">
-        <div class="month">
-        </div>
-        <div class="week">
-            <div class="header">Monday</div>
-            <div class="header">Tuesday</div>
-            <div class="header">Wednesday</div>
-            <div class="header">Thursday</div>
-            <div class="header">Friday</div>
-            <div class="header">Saturday</div>
-            <div class="header">Sunday</div>
-        </div>
-        <div class="week">
-            <div class="day">
-                <div class="number withevent"></div>
-                <div class="event pos1 begin">dfv</div>
-                <div class="event pos2 end">dfv</div>
-                <div class="event pos3 begin end">dfv</div>
-            </div>
-            <div class="day">
-                <div class="event pos1">dfv</div>
-                <div class="event pos3 end begin">dfv</div>
-            </div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-        <div class="week">
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-        <div class="week">
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-        <div class="week">
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-        <div class="week">
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-        <div class="week">
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-        </div>
-    </div>
-    <div class="adddialog">
-        <form>
-            <p>Name:</p>
-            <input type="text" name="name" value="" placeholder="Name">
-            <p>Description:</p>
-            <input type="text" name="description" value="" placeholder="Description">
-            <p>Start date:</p>
-            <input type="text" name="startdate" id="startdate" placeholder="01/01/2000">
-            <p>End date:</p>
-            <input type="text" name="enddate" id="enddate" placeholder="01/01/2000">
-            <br>
-            <input type="button" name="add" value="Add Event" id="enddate">
-        </form>
-    </div>
-    <div class="addbtn">+</div>
-</body>
+    <h2>What is C++?</h2>
 
+    <p>C++ is an object-oriented programming language that is an extension of the C language. It was developed in the early 1980s by Bjarne Stroustrup at Bell Labs. The language was designed to provide a high degree of abstraction while still allowing the developer to have fine-grained control over system resources.</p>
+
+    <h2>Why Learn C++?</h2>
+
+    <p>C++ is a popular language for developing software because it is fast, efficient, and flexible. It is used for developing operating systems, video games, and other high-performance applications. Learning C++ can also help you understand other programming languages, such as Java and Python.</p>
+
+    <h2>Getting Started with C++</h2>
+
+    <p>Before you start programming in C++, you will need to install a C++ compiler on your computer. There are several free C++ compilers available, such as GCC and Clang. Once you have installed a compiler, you can start writing your first C++ program.</p>
+
+    <h2>The Hello World Program</h2>
+
+    <p>The Hello World program is a simple program that prints the words "Hello World" to the screen. Here is the code for the Hello World program in C++:</p>
+
+    <pre>
+      <code>
+#include &lt;iostream&gt;
+
+int main()
+{
+  std::cout << "Hello World" << std::endl;
+  return 0;
+}
+      </code>
+    </pre>
+
+    <p>In this program, we include the iostream library, which allows us to print output to the screen. We then define a main function, which is the entry point of the program. Inside the main function, we print the words "Hello World" to the screen using the std::cout object.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>C++ is a powerful programming language that has been around for over 30 years. It is widely used in developing software, operating systems, video games, and more. In this article, we introduced you to the basics of C++ programming and showed you how to write your first C++ program. We hope this article has been helpful, and we encourage you to continue learning C++ programming.</p>
+  </body>
 </html>
