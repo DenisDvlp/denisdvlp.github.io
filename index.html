@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Introduction to C++ Programming</title>
-  </head>
-  <body>
-    <h1>Introduction to C++ Programming</h1>
-
-    <p>C++ is a powerful programming language that has been around for over 30 years. It is widely used in developing software, operating systems, video games, and more. In this article, we will introduce you to the basics of C++ programming.</p>
-
-    <h2>What is C++?</h2>
-
-    <p>C++ is an object-oriented programming language that is an extension of the C language. It was developed in the early 1980s by Bjarne Stroustrup at Bell Labs. The language was designed to provide a high degree of abstraction while still allowing the developer to have fine-grained control over system resources.</p>
-
-    <h2>Why Learn C++?</h2>
-
-    <p>C++ is a popular language for developing software because it is fast, efficient, and flexible. It is used for developing operating systems, video games, and other high-performance applications. Learning C++ can also help you understand other programming languages, such as Java and Python.</p>
-
-    <h2>Getting Started with C++</h2>
-
-    <p>Before you start programming in C++, you will need to install a C++ compiler on your computer. There are several free C++ compilers available, such as GCC and Clang. Once you have installed a compiler, you can start writing your first C++ program.</p>
-
-    <h2>The Hello World Program</h2>
-
-    <p>The Hello World program is a simple program that prints the words "Hello World" to the screen. Here is the code for the Hello World program in C++:</p>
-
-    <pre>
-      <code>
-#include &lt;iostream&gt;
-
-int main()
-{
-  std::cout << "Hello World" << std::endl;
-  return 0;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Denys Petrov">
+  <title>C++ blog</title>
+  <style>
+:root {
+  --purple: #CBAEDE;
+  --purple-shadow: #A78EB5;
+  --yellow: #F9E29C;
+  --pink: #FEAFB5;
+  --pink-shadow: #D693A4;
+  --blue: #95EFE3;
+  --green: #6CDCC3;
+  
+  --block-margin: 3mm;
 }
-      </code>
-    </pre>
+body {
+  background-color: #F2ECEC;
+  margin: 0;
+  height: 100vh;
+  min-width: 100mm;
+}
+header {
+  margin: var(--block-margin);
+  background-color: var(--purple);
+  height: 21mm;
+  box-shadow: 0mm 1mm 1mm 0mm var(--purple-shadow);
+  border-radius: 2mm 2mm 0mm 0mm;
+  box-sizing: border-box;
+}
+.title-text {
+  margin: 0;
+  padding: 4mm;
+  color: var(--yellow);
+  text-shadow: 0mm 0.25mm 0.5mm black;
+  font: bold 12mm Arial, sans-serif;
+}
+.middle {
+  margin: 0;
+}
+.menu {
+  margin: var(--block-margin);
+  background-color: var(--pink);
+  height: 100mm;
+  width: 30%;
+  border-radius: 2mm;
+  box-shadow: 0mm 1mm 1mm 0mm var(--pink-shadow);
+  box-sizing: border-box;
+}
+.content {
+  margin: var(--block-margin);
+  background-color: var(--pink);
+  height: 100mm;
+  width: 30%;
+  border-radius: 2mm;
+  box-shadow: 0mm 1mm 1mm 0mm var(--pink-shadow);
+  box-sizing: border-box;
+}
+footer {
+  margin: var(--block-margin);
+  background-color: var(--purple);
+  height: 21mm;
+  box-shadow: 0mm 1mm 1mm 0mm #A78EB5;
+  border-radius: 0mm 0mm 2mm 2mm;
+}
+  </style>
+</head>
+<body>
+    
+<header>
+<p class="title-text">Weird C++</p>
+</header>
+<div class="middle">
+<div class="menu"></div>
+<div class="content"></div>
+</div>
 
-    <p>In this program, we include the iostream library, which allows us to print output to the screen. We then define a main function, which is the entry point of the program. Inside the main function, we print the words "Hello World" to the screen using the std::cout object.</p>
-
-    <h2>Conclusion</h2>
-
-    <p>C++ is a powerful programming language that has been around for over 30 years. It is widely used in developing software, operating systems, video games, and more. In this article, we introduced you to the basics of C++ programming and showed you how to write your first C++ program. We hope this article has been helpful, and we encourage you to continue learning C++ programming.</p>
-  </body>
+<footer></footer>
+    
+</body>
 </html>
