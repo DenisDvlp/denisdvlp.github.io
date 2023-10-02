@@ -6,19 +6,34 @@
   <meta name="author" content="Denys Petrov">
   <title>C++ blog</title>
   <style>
-:root {
-  --purple: #CBAEDE;
-  --purple-shadow: #A78EB5;
-  --yellow: #F9E29C;
-  --pink: #FEAFB5;
-  --pink-shadow: #D693A4;
-  --turquoise: #6EC7E9;
-  --turquoise-shadow: #69A4A8;
-  --blue: #6EC7E9;
-  --blue-shadow: #8AABCA;
-  --green: #6CDCC3;
+:root {  
+  --color-h-purple: 276;
+  --color-h-yellow: 48;
+  --color-h-pink: 350;
+  --color-h-blue: 196;
+  --color-h-green: 166;
+  --color-h-turquoise: 186;
+  
+  --color-purple: hsl(var(--color-h-purple), 36%, 72%);
+  --color-purple-shadow: hsl(var(--color-h-purple), 19%, 55%);
+  
+  --color-yellow: hsl(var(--color-h-yellow), 58%, 79%);
+  --color-yellow-shadow: hsl(var(--color-h-yellow), 36%, 61%);
+  
+  --color-pink: hsl(var(--color-h-pink), 61%, 77%);
+  --color-pink-shadow: hsl(var(--color-h-pink), 41%, 68%);
+  
+  --color-blue: hsl(var(--color-h-blue), 72%, 65%);
+  --color-blue-shadow: hsl(var(--color-h-blue), 28%, 50%);
+  
+  --color-green: hsl(var(--color-h-green), 59%, 63%);
+  --color-green-shadow: hsl(var(--color-h-green), 44%, 47%);
+  
+  --color-turquoise: hsl(var(--color-h-turquoise), 61%, 80%);
+  --color-turquoise-shadow: hsl(var(--color-h-turquoise), 49%, 65%);
   
   --block-margin: 3mm;
+  --shadow-size: 0mm 1mm 1.25mm 0mm;
 }
 body {
   background-color: #F2ECEC;
@@ -28,16 +43,16 @@ body {
 }
 header {
   margin: var(--block-margin);
-  background-color: var(--purple);
+  background-color: var(--color-purple);
   height: 21mm;
-  box-shadow: 0mm 1mm 1mm 0mm var(--purple-shadow);
+  box-shadow: var(--shadow-size) var(--color-purple-shadow);
   border-radius: 2mm 2mm 0mm 0mm;
   box-sizing: border-box;
 }
 .title-text {
   margin: 0;
   padding: 4mm;
-  color: var(--yellow);
+  color: var(--color-yellow);
   text-shadow: 0mm 0.25mm 0.5mm black;
   font: bold 12mm Arial, sans-serif;
     -webkit-touch-callout: none;
@@ -53,25 +68,49 @@ header {
 }
 .menu {
   margin: var(--block-margin);
-  background-color: var(--pink);
+  background-color: var(--color-pink);
   height: 100mm;
   width: 30%;
   border-radius: 2mm;
-  box-shadow: 0mm 1mm 1mm 0mm var(--pink-shadow);
+  box-shadow: var(--shadow-size) var(--color-pink-shadow);
 }
 .content {
   margin: var(--block-margin);
-  box-shadow: 0mm 1mm 1mm 0mm var(--blue-shadow);
-  background-color: var(--blue);
+  box-shadow: var(--shadow-size) var(--color-blue-shadow);
+  background-color: var(--color-blue);
+  height: 100mm;
+  width: 30%;
+  border-radius: 2mm;
+}
+.content2 {
+  margin: var(--block-margin);
+  box-shadow: var(--shadow-size) var(--color-yellow-shadow);
+  background-color: var(--color-yellow);
+  height: 100mm;
+  width: 30%;
+  border-radius: 2mm;
+}
+.content3 {
+  margin: var(--block-margin);
+  box-shadow: var(--shadow-size) var(--color-turquoise-shadow);
+  background-color: var(--color-turquoise);
+  height: 100mm;
+  width: 30%;
+  border-radius: 2mm;
+}
+.content4 {
+  margin: var(--block-margin);
+  box-shadow: var(--shadow-size) var(--color-green-shadow);
+  background-color: var(--color-green);
   height: 100mm;
   width: 30%;
   border-radius: 2mm;
 }
 footer {
   margin: var(--block-margin);
-  background-color: var(--purple);
+  background-color: var(--color-purple);
   height: 21mm;
-  box-shadow: 0mm 1mm 1mm 0mm #A78EB5;
+  box-shadow: var(--shadow-size) var(--color-purple-shadow);
   border-radius: 0mm 0mm 2mm 2mm;
 }
   </style>
@@ -84,6 +123,9 @@ footer {
 <div class="middle">
 <div class="menu"></div>
 <div class="content"></div>
+<div class="content2"></div>
+<div class="content3"></div>
+<div class="content4"></div>
 </div>
 
 <footer></footer>
