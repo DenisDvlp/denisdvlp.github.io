@@ -12,7 +12,10 @@
   --yellow: #F9E29C;
   --pink: #FEAFB5;
   --pink-shadow: #D693A4;
-  --blue: #95EFE3;
+  --turquoise: #6EC7E9;
+  --turquoise-shadow: #69A4A8;
+  --blue: #6EC7E9;
+  --blue-shadow: #8AABCA;
   --green: #6CDCC3;
   
   --block-margin: 3mm;
@@ -37,9 +40,16 @@ header {
   color: var(--yellow);
   text-shadow: 0mm 0.25mm 0.5mm black;
   font: bold 12mm Arial, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .middle {
   margin: 0;
+  display: flex;
 }
 .menu {
   margin: var(--block-margin);
@@ -48,16 +58,14 @@ header {
   width: 30%;
   border-radius: 2mm;
   box-shadow: 0mm 1mm 1mm 0mm var(--pink-shadow);
-  box-sizing: border-box;
 }
 .content {
   margin: var(--block-margin);
-  background-color: var(--pink);
+  box-shadow: 0mm 1mm 1mm 0mm var(--blue-shadow);
+  background-color: var(--blue);
   height: 100mm;
   width: 30%;
   border-radius: 2mm;
-  box-shadow: 0mm 1mm 1mm 0mm var(--pink-shadow);
-  box-sizing: border-box;
 }
 footer {
   margin: var(--block-margin);
