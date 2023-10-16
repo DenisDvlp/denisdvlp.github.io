@@ -7,7 +7,7 @@
   <title>C++ blog</title>
   <style>
 :root {  
-  --color-alpha: 0.8;
+  --color-alpha: 1.0;
   
   --color-purple: rgba(189, 158, 209, var(--color-alpha));
   --color-purple-shadow: rgba(150, 125, 166, var(--color-alpha));
@@ -27,21 +27,27 @@
   --color-turquoise: rgba(173, 229, 235, var(--color-alpha));
   --color-turquoise-shadow: rgba(130, 204, 211, var(--color-alpha));
   
-  --shadow-size: 0mm 1mm 1.25mm 0mm;
+  --shadow-size: 0mm 1mm 1.25mm 0.25mm;
 }
 body {
-  margin: 2mm;
-  background: linear-gradient(#FEDADA 40%, #FBEAFD 80%, #65C4E6 120%);
+  margin: 0;
+  padding: 3mm;
+  background: linear-gradient(#EFE9E9 60%, #FBEAFD 85%, #65C4E6 120%);
   height: 100vh;
   min-width: 100mm;
+  box-sizing: border-box;
+}
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
 }
 header {
-  margin-bottom: 2mm;
   background-color: var(--color-purple);
   height: 21mm;
   box-shadow: var(--shadow-size) var(--color-purple-shadow);
   border-radius: 2mm 2mm 0mm 0mm;
-  box-sizing: border-box;
+  backdrop-filter: blur(1mm);
 }
 .title-text {
   margin: 0;
@@ -61,18 +67,14 @@ header {
   text-shadow: 0mm 0mm 0.5mm black;
 }
 .content {
-  margin-bottom: 2mm;
   display: flex;
-}
-.content {
-  margin-bottom: 2mm;
-  display: flex;
-  gap: 2mm;
+  gap: 3mm;
 }
 .tile {
   height: 100mm;
-  width: 30%;
+  width: 100%;
   border-radius: 2mm;
+  backdrop-filter: blur(1mm);
 }
 .menu {
   box-shadow: var(--shadow-size) var(--color-pink-shadow);
@@ -99,24 +101,25 @@ footer {
   height: 21mm;
   box-shadow: var(--shadow-size) var(--color-purple-shadow);
   border-radius: 0mm 0mm 2mm 2mm;
-  box-sizing: border-box;
+  backdrop-filter: blur(1mm);
 }
   </style>
 </head>
 <body>
     
-<header>
-<p class="title-text">Weird C++</p>
-</header>
-<div class="content">
-<div class="tile menu"></div>
-<div class="tile content1"></div>
-<div class="tile content2"></div>
-<div class="tile content3"></div>
-<div class="tile content4"></div>
+<div class="flex-body">
+  <header>
+    <p class="title-text">Weird C++</p>
+  </header>
+  <div class="content">
+    <div class="tile menu"></div>
+    <div class="tile content1"></div>
+    <div class="tile content2"></div>
+    <div class="tile content3"></div>
+    <div class="tile content4"></div>
+  </div>
+  <footer></footer>
 </div>
-
-<footer></footer>
     
 </body>
 </html>
