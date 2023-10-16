@@ -31,16 +31,18 @@
 }
 body {
   margin: 0;
-  padding: 3mm;
-  background: linear-gradient(#EFE9E9 60%, #FBEAFD 85%, #65C4E6 120%);
-  height: 100vh;
-  min-width: 100mm;
-  box-sizing: border-box;
+  padding: 0;
 }
 .flex-body {
+  background: linear-gradient(#EFE9E9 60%, #FBEAFD 85%, #65C4E6 120%);
+  min-width: 100mm;
+  padding: 3mm;
   display: flex;
   flex-direction: column;
   gap: 3mm;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 header {
   background-color: var(--color-purple);
@@ -67,6 +69,7 @@ header {
   text-shadow: 0mm 0mm 0.5mm black;
 }
 .content {
+  height: 100%;
   display: flex;
   gap: 3mm;
 }
@@ -101,7 +104,6 @@ footer {
   height: 21mm;
   box-shadow: var(--shadow-size) var(--color-purple-shadow);
   border-radius: 0mm 0mm 2mm 2mm;
-  backdrop-filter: blur(1mm);
 }
   </style>
 </head>
