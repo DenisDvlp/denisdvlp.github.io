@@ -27,6 +27,9 @@
   --color-turquoise: rgba(173, 229, 235, var(--color-alpha));
   --color-turquoise-shadow: rgba(130, 204, 211, var(--color-alpha));
   
+  --color-light-pink: rgba(243, 220, 230, var(--color-alpha));
+  --color-light-turquoise: rgba(225, 239, 242, var(--color-alpha));
+  
   --shadow-size: 0mm 1mm 1.25mm 0.25mm;
 }
 body {
@@ -34,7 +37,7 @@ body {
   padding: 0;
 }
 .flex-body {
-  background: linear-gradient(#EFE9E9 60%, #FBEAFD 85%, #65C4E6 120%);
+  background: linear-gradient(#EFE9E9 60%, #FBEAFD 80%, #65C4E6 120%);
   min-width: 100mm;
   padding: 3mm;
   display: flex;
@@ -48,8 +51,7 @@ header {
   background-color: var(--color-purple);
   height: 21mm;
   box-shadow: var(--shadow-size) var(--color-purple-shadow);
-  border-radius: 2mm 2mm 0mm 0mm;
-  backdrop-filter: blur(1mm);
+  border-radius: 3mm 3mm 0mm 0mm;
 }
 .title-text {
   margin: 0;
@@ -76,7 +78,7 @@ header {
 .tile {
   height: 100mm;
   width: 100%;
-  border-radius: 2mm;
+  border-radius: 3mm;
   backdrop-filter: blur(1mm);
 }
 .menu {
@@ -99,11 +101,19 @@ header {
   box-shadow: var(--shadow-size) var(--color-green-shadow);
   background-color: var(--color-green);
 }
+.block {
+  margin: 5mm;
+  padding: 1mm;
+  box-shadow: var(--shadow-size) rgba(0, 0, 0, 0.25);
+  background-color: rgba(240, 240, 240, 0.65);
+  border-radius: 0.75mm;
+  box-sizing: border-box;
+}
 footer {
   background-color: var(--color-purple);
   height: 21mm;
   box-shadow: var(--shadow-size) var(--color-purple-shadow);
-  border-radius: 0mm 0mm 2mm 2mm;
+  border-radius: 0mm 0mm 3mm 3mm;
 }
   </style>
 </head>
@@ -117,7 +127,9 @@ footer {
     <div class="tile menu"></div>
     <div class="tile content1"></div>
     <div class="tile content2"></div>
-    <div class="tile content3"></div>
+    <div class="tile content3">
+    	<div class="block">dfgdfg</div>
+    </div>
     <div class="tile content4"></div>
   </div>
   <footer></footer>
